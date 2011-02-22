@@ -88,7 +88,7 @@ if(window.top === window) {
 				// now that we are all set, append it and make things be awesome!
 				video_wrapper.appendChild(video);
 				
-				// If your window is big enough, I'm going to plug myself... :)
+				// If your window is big enough, I'm going to put in a little advert for myself... :)
 				if(window.outerWidth >= 1240) {
 					// Create the div for the plug and position it
 					var node = document.createElement("div");
