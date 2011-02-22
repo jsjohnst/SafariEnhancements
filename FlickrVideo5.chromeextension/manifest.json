@@ -1,0 +1,16 @@
+{
+  "name": "Flickr HTML5 Video",
+  "description": "If you have Flash in Chrome Disabled then this replaces Flickr Videos with an HTML <video> element, written by Jeremy Johnstone (http://www.jeremyjohnstone.com/projects/h-264-flickr-videos-in-safari).",
+  "version": "1.1",
+  "icons": { "128": "FlickrVideo.png" },
+  "update_url": "http://jamiei.com/code/FlickrVideo/updates.xml",
+  "permissions": [
+    "tabs", "http://www.flickr.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://www.flickr.com/*"],
+      "js": ["flickr_video.js"]
+    }
+  ]
+}
