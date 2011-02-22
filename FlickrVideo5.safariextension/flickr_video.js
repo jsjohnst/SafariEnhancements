@@ -80,6 +80,7 @@ if(window.top === window) {
 				video.width = video_wrapper.style.width.substr(0, video_wrapper.style.width.length - 2);
 				video.height = video_wrapper.style.height.substr(0, video_wrapper.style.height.length - 2);
 
+				video.preload = "metadata";
 				video.controls = true;
 				video.poster = poster;
 				video.src = video_src;
