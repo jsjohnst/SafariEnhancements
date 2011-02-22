@@ -1,0 +1,7 @@
+/FlickrVideo5.safariextension - 
+Is a Safari 5 extension which replaces "Adobe Flash not installed" warnings on flickr.com w/ working HTML5 <video> tags.
+Find out more information about it here: http://www.jeremyjohnstone.com/projects/h-264-flickr-videos-in-safari
+
+/Bookmarklets/FlickrVideo5 -
+This is a bookmarklet form of the above Safari 5 extension for those who prefer it. Only tested in Safari 5, other browsers will have potentially unpredictable results.
+

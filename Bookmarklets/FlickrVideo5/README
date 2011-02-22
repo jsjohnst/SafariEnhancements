@@ -1,0 +1,5 @@
+For this to work, you need the following to be used as a bookmarklet:
+
+&lt;a href="javascript:var%20s=document.createElement("script");s.src="http://jsjohnst.github.com/flickr_video.js";document.body.appendChild(s);"&gt;FlickrVideo5&lt;/a&gt;
+
+Replacing the s.src URL with the URL to your modified version of course. :)
