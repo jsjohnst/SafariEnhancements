@@ -81,7 +81,9 @@ if(window.top === window) {
 			if(video_wrapper && video_src) {
 
 				// get rid of the nasty "You need Flash!" b/s
-				video_wrapper.removeChild(video_wrapper.firstChild);
+				while (video_wrapper.hasChildNodes()) {
+					video_wrapper.removeChild(video_wrapper.firstChild);
+				}
 
 				// Now create a <video> element and set it's properties as needed
 				var video = document.createElement("video");
@@ -93,6 +95,26 @@ if(window.top === window) {
 				video.controls = true;
 				video.poster = poster;
 				video.src = video_src;
+				
+				video.addEventListener("error", function(e) {
+					switch (e.target.error.code) {
+						case e.target.error.MEDIA_ERR_ABORTED:
+					       // ignore
+					       break;
+					     case e.target.error.MEDIA_ERR_NETWORK:
+					       alert('A network error occurred during playback, try again?\nPlease report this issue if it is persistent! Code #2');
+					       break;
+					     case e.target.error.MEDIA_ERR_DECODE:
+					       alert('The Flickr video stream is corrupted or unplayable.\nPlease report this issue! Code #3');
+					       break;
+					     case e.target.error.MEDIA_ERR_SRC_NOT_SUPPORTED:
+					       alert('The Flickr video stream is corrupted or unplayable.\nPlease report this issue! Code #4');
+					       break;
+					     default:
+					       alert('An unknown error occurred.');
+					       break;
+					   }
+				});
 
 				// now that we are all set, append it and make things be awesome!
 				video_wrapper.appendChild(video);
