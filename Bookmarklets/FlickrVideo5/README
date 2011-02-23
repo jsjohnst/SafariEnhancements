@@ -10,3 +10,5 @@ Version History
 v1.0 - Initial release
 
 v1.1 - Added error handling to the <video> element
+
+v1.2 - Prettier error handling :)
