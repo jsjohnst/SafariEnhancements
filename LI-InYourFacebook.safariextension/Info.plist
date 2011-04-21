@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>LI Platform Hackers</string>
+	<key>CFBundleDisplayName</key>
+	<string>LI-InYourFacebook</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.linkedin.inyourfacebook</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>3.3</string>
+	<key>CFBundleVersion</key>
+	<string>4</string>
+	<key>Chrome</key>
+	<dict/>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>inject.js</string>
+			</array>
+		</dict>
+		<key>Stylesheets</key>
+		<array>
+			<string>stylish.css</string>
+		</array>
+	</dict>
+	<key>Description</key>
+	<string>This puts LI awesomeness in the FB profile pages you view</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>http://developer.linkedin.com</string>
+</dict>
+</plist>
